@@ -1,0 +1,19 @@
+<h1>Movies</h1>
+
+<ul>
+  <li>Iron Man</li>
+  <li>Superman</li>
+  <li>Spider-Man</li>
+</ul>
+<br>
+<br>
+<ul>
+<% @movies.each do |movie| %>
+<h1><li><%= movie.titlecase %></li></h1>
+  <% end %>
+</ul>
+
+<br>
+<br>
+
+<%= @movies %>
