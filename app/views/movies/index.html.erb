@@ -1,19 +1,78 @@
+<style>
+ul {
+  color:black;
+}
+h1 {
+  color:yellow;
+}
+body {
+    background-color: lightblue;
+}
+.imgborder {
+  border-radius:50%;
+}
+  </style>
 <h1>Movies</h1>
 
-<ul>
-  <li>Iron Man</li>
+<ul:bold>
+  <b><li>Iron Man</li>
   <li>Superman</li>
-  <li>Spider-Man</li>
+  <li>Spider-Man</li></b>
 </ul>
 <br>
 <br>
 <ul>
-<% @movies.each do |movie| %>
-<h1><li><%= movie.titlecase %></li></h1>
+  <% @movies.each do |movie| %>
+    <h1><li><%= movie.titlecase %></li></h1>
   <% end %>
 </ul>
 
 <br>
 <br>
 
-<%= @movies %>
+<b><%= @movies %></b>
+
+<h1> I Love The Movies! </h1>
+
+<%= image_tag("IMG_0411.JPG", :class => "imgborder", :alt => "Movies!") %>
+
+
+
+<html>
+<head>
+  <title>James Fox</title>
+</head>
+<style>
+  body {
+  background-color: #a3d5d3;
+}
+  body {
+    background-color:black;
+}
+ul {
+  color:white;
+  background-color:;
+  width:200px;
+  height:200px;
+  bold;
+}
+  h1 {
+    color: white
+  }
+.imgborder {
+  border-radius:50%;
+}
+  </style>
+  <body>
+<h1> Hello James Fox </h1>
+ <b> <ul>
+  <li> This is HTML </li>
+  <li> This Is SPARTA!!! </li>
+   <ul>
+    </br>
+    <div>
+      <img class="imgborder" src="http://historythings.com/wp-content/uploads/2016/05/sparta.jpeg" width=250 height=250 alt="SParTA"/>
+</div
+</body>
+      <!--  COOL WEBPAGE YEA!!! -->
+</html>

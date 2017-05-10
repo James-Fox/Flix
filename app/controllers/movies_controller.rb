@@ -1,8 +1,7 @@
 class MoviesController < ApplicationController
 
-def index
- @movies = ['Iron Man', 'Superman', 'Spider-Man']
- @movies << 'Batman'
-end
-
+  def index
+     @movies = ['Iron Man', 'Superman', 'Spider-Man', 'Batman']
+     @movies << 'Thor'
+  end
 end

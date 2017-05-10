@@ -1,0 +1,21 @@
+<head> Events </head>
+
+<h1> Welcome To Events </h1>
+
+<h3> Listing Generated At <%= @time %> </h3>
+<ul>
+  <% @events.each do |event| %>
+  <li><%= event %></li>
+  <% end %>
+<br>
+<ul>
+  <% @humans.each do |human| %>
+  <li><%= human %></li>
+  <% end %>
+</ul>
+<br>
+<h2>Not Dynamic </h2>
+  <li>BugSmash</li>
+  <li>Hackathon</li>
+  <li>Kata Camp</li>
+</ul>
