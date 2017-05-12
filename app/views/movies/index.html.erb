@@ -39,12 +39,11 @@ border-radius:50%;
 
 
 .white-background {
-  width: 30%;
+  width:50%;
   background-color: white;
   border-color: black;
 
   border-style: ridge;
-
 
   border-top-width: thick;
   box-sizing: border-box;
@@ -86,12 +85,21 @@ body {
   <% m = movie.name.to_s %>
   <% r = movie.ratting.to_s %>
   <% id = movie.id.to_s %>
-    <h1><%= "  #{id}. #{m}  -  Has a Ratting of  (#{r}) " %></h1>
+    <h1><%= "#{id}. #{m}  -  Has a Ratting of  (#{r}) " %></h1>
   <% end %>
 </align-self>
 </div>
-
+<div>
+  <%= form_for @new do |f|  %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :bio %>
+  <%= f.text_area :bio %>
+  <%= f.label :ratting %>
+  <%= f.text_field :ratting %>
+  <% end %>
 <br>
+<%= @posts %>
 <br>
 
 <b> </b>
